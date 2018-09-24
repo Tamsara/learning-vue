@@ -6,7 +6,9 @@ import router from './router'
 import VueProgressBar from 'vue-progressbar'
 import VueSweetalert2 from 'vue-sweetalert2'
 import Carousel3d from 'vue-carousel-3d'
+import BootstrapVue from 'bootstrap-vue'
 
+Vue.use(BootstrapVue);
 Vue.use(Carousel3d)
 Vue.use(VueSweetalert2)
 Vue.use(VueProgressBar, {

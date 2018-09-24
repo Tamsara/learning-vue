@@ -82,7 +82,7 @@
     </ul>
   </div> -->
   <div class="app">
-    <h1>Hello World</h1>
+    <h1>Hello World55</h1>
     <input type="text" v-model="msg1">
     <MyComponent :text="msg1"/>
   </div>
