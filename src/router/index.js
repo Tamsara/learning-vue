@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Foo from '@/components/Foo'
 import Bar from '@/components/Bar'
 import About from '@/components/About'
+import AboutTimeline from '@/components/AboutTimeline'
 
 Vue.use(Router)
 
@@ -28,6 +29,13 @@ export default new Router({
       path: '/About',
       name: 'About',
       component: About
+    },
+    {
+      path: '/AboutTimeline',
+      name: 'AboutTimeline',
+      component: AboutTimeline
     }
+
+    
   ]
 })

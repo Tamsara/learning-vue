@@ -29,7 +29,11 @@
         <div class="col-8 text-detial text-left">    
                 <p>เป็นผู้นำทางด้านการพัฒนา software และ hardware สำหรับสื่อโฆษณาสื่อดิจิทัลครบวงจร</p>
                 <div class="text-right  link-box-timeline">
-                    <a class="btn btn-outline-light  link-box" href="about-timeline.php" role="button">&nbsp;&nbsp;&nbsp;TIMELINE&nbsp;&nbsp;&nbsp;</a>
+                    แสดงผลเหมือนกันหมด
+                     <b-link :to="{ name: 'AboutTimeline'}" class="btn btn-outline-light  link-box">User</b-link>
+                    <router-link :to="{ name: 'AboutTimeline' }" class="btn btn-outline-light  link-box" >TIMELINE</router-link>
+                    <b-button href="#/AboutTimeline" class="btn btn-outline-light  link-box">I am a Link</b-button>  
+                    <a class="btn btn-outline-light  link-box" href="#/AboutTimeline" role="button">&nbsp;&nbsp;&nbsp;TIMELINE&nbsp;&nbsp;&nbsp;</a>
                 </div>
         </div>
     </div> 

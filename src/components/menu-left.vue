@@ -2,13 +2,32 @@
     <div class="direct">
         <ul class="nav">
             <li class="nav-item__menu"><router-link :to="{ name: 'About' }"  tag="a">HOME</router-link></li>
-            <li class="nav-item__menu"><router-link :to="{ name: 'About' }"  tag="a">ABOUT US</router-link></li>
+            <li class="nav-item__menu"><router-link :to="{ name: 'About' }" v-bind:class="classObject">ABOUT US</router-link></li>
             <li class="nav-item__menu"><a href="what-we-do.php">WHAT WE DO</a></li>
             <li class="nav-item__menu"><a href="portfolio.php">PORTFOLIO</a></li>
             <li class="nav-item__menu"><a href="contact-detial.php">CONTACT</a></li>  
         </ul>
     </div>
+    
 </template>
+<script>
+export default {
+    data (){
+        return {
+            isActive: false
+        }
+    },
+    computed: {
+  classObject: function () {
+    return {
+      active: !this.isActive
+    //   'text-danger': this.error && this.error.type === 'fatal'
+    }
+  }
+}
+}
+</script>
+
 <style>
 /*--- Page herder class direct ---------------------*/
 div.direct{

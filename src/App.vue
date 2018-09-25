@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container-fluid">
     <header-view :myFunc2="start"/>
     <menu-left></menu-left>
     <menu-right></menu-right>
